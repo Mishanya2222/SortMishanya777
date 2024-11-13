@@ -1,4 +1,7 @@
-import time
+
+import random
+t= 10
+
 def buble_sort(a):
     n=len(a)
     x = True
@@ -16,6 +19,29 @@ def buble_sort(a):
 
 
 
+a = [random.randint(0,t-1) for i in range(t-1)]
 
-a = [12,4,3,6,7]
-print(buble_sort(a))
+buble_sort(a)
+print()
+
+
+
+
+
+
+
+
+
+
+
+oporn=a[random.randint(0, t-1)]
+def qsort(a):
+    m=[]
+    n=[]
+    for i in a:
+        if oporn >= i:
+            m.append(i)
+        elif oporn<i:
+            n.append(i)
+            
+
